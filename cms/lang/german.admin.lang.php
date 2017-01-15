@@ -196,6 +196,7 @@ $lang['menu_item_title'] =               'Titel';
 $lang['menu_item_link'] =                'Link';
 $lang['menu_item_section'] =             'Sektion';
 $lang['menu_item_accesskey'] =           'Access-Key';
+$lang['menu_item_submenu'] =             'Untermenü';
 $lang['add_menu_item_submit'] =          'Eintrag hinzufügen';
 $lang['no_menu_item'] =                  'Es ist noch kein Menü-Eintrag vorhanden.';
 $lang['insert_menu_item'] =              'Menü-Eintrag hinzufügen:';

@@ -201,6 +201,7 @@ $lang['menu_item_title'] =               'Заглавие (hover текст)';
 $lang['menu_item_link'] =                'Линк (страница или URL)';
 $lang['menu_item_section'] =             'Секция';
 $lang['menu_item_accesskey'] =           'Бърз клавиш (accesskey)';
+$lang['menu_item_submenu'] =             'Подменю';
 $lang['add_menu_item_submit'] =          'Добави елемент';
 $lang['no_menu_item'] =                  'В менюто няма елементи.';
 $lang['insert_menu_item'] =              'Добави елемент в менюто:';

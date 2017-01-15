@@ -196,6 +196,7 @@ $lang['menu_item_title'] =               '描述';
 $lang['menu_item_link'] =                '链接';
 $lang['menu_item_section'] =             '段';
 $lang['menu_item_accesskey'] =           '快捷键';
+$lang['menu_item_submenu'] =             '二级菜单';
 $lang['add_menu_item_submit'] =          '增加项目';
 $lang['no_menu_item'] =                  '没有任何菜单项.';
 $lang['insert_menu_item'] =              '增加菜单项:';

@@ -199,6 +199,7 @@ $lang['menu_item_title'] =               'Título';
 $lang['menu_item_link'] =                'Enlace';
 $lang['menu_item_section'] =             'Seccción';
 $lang['menu_item_accesskey'] =           'Tecla de acceso';
+$lang['menu_item_submenu'] =             'Submenú';
 $lang['add_menu_item_submit'] =          'Añadir ítem';
 $lang['no_menu_item'] =                  'No hay ítems en el menú.';
 $lang['insert_menu_item'] =              'Añadir un ítem al menú:';

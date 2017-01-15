@@ -200,6 +200,7 @@ $lang['menu_item_title'] =               'Заголовок';
 $lang['menu_item_link'] =                'Ссылка';
 $lang['menu_item_section'] =             'Секция';
 $lang['menu_item_accesskey'] =           'Горячая клавиша';
+$lang['menu_item_submenu'] =             'Подменю';
 $lang['add_menu_item_submit'] =          'Добавить пункт';
 $lang['no_menu_item'] =                  'Пунктов меню не найдено.';
 $lang['insert_menu_item'] =              'Добавить пункт меню:';

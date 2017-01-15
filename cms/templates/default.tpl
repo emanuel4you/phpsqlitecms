@@ -11,6 +11,7 @@
     <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
     <link href="<?php echo STATIC_URL; ?>css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="<?php echo STATIC_URL; ?>img/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
 
 <body<?php if ($admin): ?> class="admin"<?php endif; ?>>
@@ -29,10 +30,28 @@
                 <?php if ($menu_1 && isset($menus[$menu_1])): ?>
                     <ul class="nav nav-pills">
                         <?php foreach ($menus[$menu_1] as $item): ?>
-                            <li<?php if (!empty($item['section']) && $item['section'] == $section[0]): ?> class="active"<?php endif; ?>>
+                            <li<?php if (!empty($item['section']) && $item['section'] == $section[0]): ?> class="active<?php if(!empty($item['submenu'])){ echo 'dropdown'; } ?>"
+                            <?php else: ?>
+                               <?php if(!empty($item['submenu'])): ?> class="dropdown"<?php endif; ?>
+                            <?php endif; ?> >
                             <a href="<?php echo $item['link']; ?>"
+                               <?php if(!empty($item['submenu'])): ?> data-toggle="dropdown" class="dropdown-toggle"<?php endif; ?>
                                title="<?php echo $item['title']; ?>"<?php if ($item['accesskey'] != ''): ?> accesskey="<?php echo $item['accesskey']; ?>"<?php endif; ?>><?php echo $item['name']; ?></a>
-                            </li><?php endforeach; ?>
+
+                            <?php if(!empty($item['submenu'])){
+                               $menu_sub=$item['submenu'];
+                               if(isset($menus[$menu_sub])) {
+                                   echo '<ul class="dropdown-menu" >';
+                                   foreach($menus[$menu_sub] as $item): ?>
+                                       <li><a href="<?php echo $item['link']; ?>" title="<?php echo $item['title']; ?>"><?php echo $item['name']; ?></a></li>
+                                   <?php endforeach; 
+                                   echo '</ul>';
+                                 }
+                               } 
+                            ?>
+                            
+                            </li>
+                        <?php endforeach; ?>
                     </ul>
                 <?php endif; ?>
             </nav>
@@ -105,6 +124,14 @@
 <script src="<?php echo JQUERY; ?>"></script>
 <script src="<?php echo BOOTSTRAP; ?>"></script>
 <script src="<?php echo STATIC_URL; ?>js/main.js"></script>
+<script>
+    $('#nav li.dropdown').hover(function() {
+        $('#nav ul.dropdown-menu').first().stop(true, true).delay(50).slideDown();
+    }, function() {
+        $('#nav ul.dropdown-menu').first().stop(true, true).delay(250).fadeOut();
+    });
+</script>
+
 <?php if ($admin): ?>
     <script src="<?php echo STATIC_URL; ?>js/admin_frontend.js"></script>
 <?php endif; ?>
