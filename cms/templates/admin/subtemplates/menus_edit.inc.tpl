@@ -26,7 +26,7 @@
                     <th>&nbsp;</th>
                 </tr>
                 </thead>
-                <tbody<?php if (empty($edit_item)): ?> data-sortable="<?php echo BASE_URL; ?>index.php?cms/?mode=menus&amp;reorder_items=true"<?php endif; ?>>
+                <tbody<?php if (empty($edit_item)): ?> data-sortable="<?php echo BASE_URL; ?>cms/index.php?mode=menus&amp;reorder_items=true"<?php endif; ?>>
 
                 <?php if (isset($edit_item)): ?>
                     <?php $i = 0;
