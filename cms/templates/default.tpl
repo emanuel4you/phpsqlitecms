@@ -36,12 +36,12 @@
                             <?php endif; ?> >
                             <a href="<?php echo $item['link']; ?>"
                                <?php if(!empty($item['submenu'])): ?> data-toggle="dropdown" class="dropdown-toggle"<?php endif; ?>
-                               title="<?php echo $item['title']; ?>"<?php if ($item['accesskey'] != ''): ?> accesskey="<?php echo $item['accesskey']; ?>"<?php endif; ?>><?php echo $item['name']; ?></a>
+                               title="<?php echo $item['title']; ?>"<?php if ($item['accesskey'] != ''): ?> accesskey="<?php echo $item['accesskey']; ?>"<?php endif; ?>><?php echo $item['name']; ?><?php if(!empty($item['submenu'])){ echo '<span class="caret"></span>'; } ?></a>
 
                             <?php if(!empty($item['submenu'])){
                                $menu_sub=$item['submenu'];
                                if(isset($menus[$menu_sub])) {
-                                   echo '<ul class="dropdown-menu" >';
+                                   echo '<ul class="dropdown-menu nav-pills nav-stacked" >';
                                    foreach($menus[$menu_sub] as $item): ?>
                                        <li><a href="<?php echo $item['link']; ?>" title="<?php echo $item['title']; ?>"><?php echo $item['name']; ?></a></li>
                                    <?php endforeach; 
