@@ -54,6 +54,7 @@ try
     if(is_access_denied()) raise_error('403');
    }
 
+  define('TOKEN_SALT', 'monkey');
   define('ADMIN_DIR', 'cms/');
   define('CACHE_DIR', 'cms/cache/');
   define('BASE_URL',get_base_url('cms/'));
