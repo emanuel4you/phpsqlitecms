@@ -49,6 +49,7 @@ $lang['admin_menu_user_administr'] =     'Zarządzanie użytkownikami';
 $lang['admin_menu_clear_cache'] =        'wyczysć cache';
 $lang['admin_menu_edit_userdata'] =      'Edytuj dane użytkownika';
 $lang['admin_menu_settings'] =           'Ustawienia';
+$lang['admin_menu_backup'] =             'Utworzyć kopię zapasową';
 
 # login
 $lang['login'] =                         'Logowanie';
@@ -485,4 +486,10 @@ $lang['insert_image_alt'] =              'Tekst do zmiennej ALT:';
 $lang['insert_image_width_height'] =     'Szerokość/Wysokość:';
 $lang['delete_error'] =                  'Błąd przy usuwaniu';
 $lang['upload_error'] =                  'Błąd w ładowaniu sprawdź uprawnienia dla katalogu z obrazkami!';
+
+# backup
+$lang['backup'] =                        'Utworzyć kopię zapasową';
+$lang['create_backup'] =                 'Tworzenie kopii zapasowej';
+$lang['delete_this_backup_section'] =    'Czy na pewno chcesz usunąć kopię zapasową?';
+$lang['no_backup_sections'] =            'Brak kopii zapasowych';
 ?>

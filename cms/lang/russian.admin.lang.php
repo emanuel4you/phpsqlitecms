@@ -48,6 +48,7 @@ $lang['admin_menu_user_administr'] =     'Пользователи';
 $lang['admin_menu_clear_cache'] =        'Очистить кэш';
 $lang['admin_menu_edit_userdata'] =      'Изменить данные юзера';
 $lang['admin_menu_settings'] =           'Настройки';
+$lang['admin_menu_backup'] =             'Резервное копирование';
 
 # login
 $lang['login'] =                         'Вход';
@@ -484,4 +485,10 @@ $lang['insert_image_alt'] =              'ALT текст:';
 $lang['insert_image_width_height'] =     'Ширина/Высота:';
 $lang['delete_error'] =                  'Ошибка удаления';
 $lang['upload_error'] =                  'Ошибка загрузки - проверьте права на запись для папки img!';
+
+# backup
+$lang['backup'] =                        'Резервное копирование';
+$lang['create_backup'] =                 'Создать резервную копию';
+$lang['delete_this_backup_section'] =    'Вы действительно хотите удалить резервную копию?';
+$lang['no_backup_sections'] =            'Там нет резервных копий';
 ?>

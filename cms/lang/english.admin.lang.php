@@ -44,6 +44,7 @@ $lang['admin_menu_user_administr'] =     'User administration';
 $lang['admin_menu_clear_cache'] =        'clear cache';
 $lang['admin_menu_edit_userdata'] =      'Edit user data';
 $lang['admin_menu_settings'] =           'Settings';
+$lang['admin_menu_backup'] =             'Backup';
 
 # login
 $lang['login'] =                         'Log in';
@@ -480,4 +481,10 @@ $lang['insert_image_alt'] =              'ALT text:';
 $lang['insert_image_width_height'] =     'Width/Height:';
 $lang['delete_error'] =                  'Delete error';
 $lang['upload_error'] =                  'Upload error - check writing permission of img folder!';
+
+# backup
+$lang['backup'] =                        'Backup';
+$lang['create_backup'] =                 'Create backup';
+$lang['delete_this_backup_section'] =    'Do you really want to delete the backup?';
+$lang['no_backup_sections'] =            'There are no backups';
 ?>
